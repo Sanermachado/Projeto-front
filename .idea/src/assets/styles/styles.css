@@ -8,24 +8,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-.google-btn {
-    background-color: #4285F4;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 100%;
-}
-
-.google-icon {
-    width: 20px; /* Ajuste o tamanho da imagem conforme necessário */
-    height: 20px;
-    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
-}
 
 body {
     font-family: 'FontAwesome', Arial, sans-serif;
@@ -39,11 +21,12 @@ body {
 
 .container {
     display: flex;
-    width: 100%; /* Tamanho completo da largura */
+    width: 100%;
+    height: 100%;
     background-color: white;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     overflow: hidden;
+    justify-content: space-between;
 }
 
 .left-section {
@@ -53,6 +36,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 20px;
+    width: 50%;
 }
 
 .illustration {
@@ -60,23 +44,29 @@ body {
     height: auto;
 }
 
+@media (max-width: 768px) {
+    .left-section {
+        display: none;
+    }
+}
+
 .right-section {
     flex: 1;
-    padding: 40px; /* Mais espaçamento para centralizar melhor o conteúdo */
+    padding: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center;
 }
 
 h2 {
-    font-size: 32px; /* Aumentado o título */
+    font-size: 32px;
     margin-bottom: 20px;
     text-align: center;
 }
 
 p {
-    font-size: 18px; /* Texto de introdução maior */
+    font-size: 18px;
     margin-bottom: 25px;
     text-align: center;
 }
@@ -85,12 +75,12 @@ form {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 600px; /* Limite a largura do formulário */
+    max-width: 600px;
 }
 
 label {
     margin-bottom: 10px;
-    font-size: 18px; /* Aumentar o tamanho do label */
+    font-size: 18px;
 }
 
 input {
@@ -98,7 +88,7 @@ input {
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 16px; /* Tamanho do texto dos inputs */
+    font-size: 16px;
     width: 100%;
 }
 
@@ -109,7 +99,7 @@ button {
     border-radius: 4px;
     cursor: pointer;
     width: 100%;
-    font-size: 16px; /* Aumentar texto dos botões */
+    font-size: 16px;
 }
 
 button[type="submit"] {
@@ -118,26 +108,61 @@ button[type="submit"] {
 }
 
 .google-btn {
-    background-color: #4285F4;
+    background-color: #1A202C;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.google-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
 }
 
 .remember-forgot {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    margin-bottom: 20px;
-    font-size: 16px; /* Aumentar o tamanho das opções */
+    margin-bottom: 10px;
+    font-size: 16px;
 }
 
 .signup-text {
     text-align: center;
-    font-size: 16px; /* Texto de cadastro maior */
+    font-size: 16px;
 }
 
 a {
     color: #28a745;
-    font-size: 16px; /* Tamanho do link */
+    font-size: 16px;
     text-decoration: none;
+}
+
+.remember-label {
+    display: flex;
+    align-items: center;
+}
+
+.remember-label input[type="checkbox"] {
+    display: none;
+}
+
+.remember-label:before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #28a745;
+    background: white;
+    margin-right: 8px;
+    transition: background 0.3s;
+}
+
+.remember-label input[type="checkbox"]:checked + span:before {
+    background: #28a745;
+    border: 2px solid transparent;
 }
 
 a:hover {
