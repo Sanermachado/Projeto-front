@@ -8,6 +8,24 @@
     padding: 0;
     box-sizing: border-box;
 }
+.google-btn {
+    background-color: #4285F4;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.google-icon {
+    width: 20px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: 20px;
+    margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+}
 
 body {
     font-family: 'FontAwesome', Arial, sans-serif;

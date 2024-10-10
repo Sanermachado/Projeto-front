@@ -2,7 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title><!DOCTYPE html>
+        <html lang="pt-BR">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Página de Login</title>
+    <link rel="stylesheet" href="assets/styles/styles.css">
+</head>
+<body>
+<div class="container">
+    <div class="left-section">
+        <img src="assets/imagens/image.svg" alt="Ilustração" class="illustration">
+    </div>
+    <div class="right-section">
+        <h2>Bem-vindo de volta</h2>
+        <p>Faça login na sua conta</p>
+        <form id="loginForm">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" placeholder="exemplo@gmail.com" required>
+
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" placeholder="Sua senha" required>
+
+            <div class="remember-forgot">
+                <label>
+                    <input type="checkbox" id="remember"> Lembre de mim
+                </label>
+                <a href="#">Esqueceu sua senha?</a>
+            </div>
+
+            <button type="submit">Entrar na conta</button>
+            <button type="button" class="google-btn">
+                <img src="assets/imagens/icon.png" alt="Google Icon" class="google-icon"> Ou faça login com o Google
+            </button>
+        </form>
+        <p class="signup-text">Não tem uma conta? <a href="#">Cadastre-se</a></p>
+    </div>
+</div>
+
+<script src="scripts/main.js"></script>
+</body>
+</html>
+</title>
 </head>
 <body>
 
