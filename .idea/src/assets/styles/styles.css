@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/font-awesome.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'FontAwesome', Arial, sans-serif;
+    background-color: #f0f5f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    width: 100%; /* Tamanho completo da largura */
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.left-section {
+    flex: 1;
+    background-color: #e6fff0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.illustration {
+    width: 100%;
+    height: auto;
+}
+
+.right-section {
+    flex: 1;
+    padding: 40px; /* Mais espaçamento para centralizar melhor o conteúdo */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+h2 {
+    font-size: 32px; /* Aumentado o título */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 18px; /* Texto de introdução maior */
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px; /* Limite a largura do formulário */
+}
+
+label {
+    margin-bottom: 10px;
+    font-size: 18px; /* Aumentar o tamanho do label */
+}
+
+input {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px; /* Tamanho do texto dos inputs */
+    width: 100%;
+}
+
+button {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px; /* Aumentar texto dos botões */
+}
+
+button[type="submit"] {
+    background-color: #28a745;
+    color: white;
+}
+
+.google-btn {
+    background-color: #4285F4;
+    color: white;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 16px; /* Aumentar o tamanho das opções */
+}
+
+.signup-text {
+    text-align: center;
+    font-size: 16px; /* Texto de cadastro maior */
+}
+
+a {
+    color: #28a745;
+    font-size: 16px; /* Tamanho do link */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
